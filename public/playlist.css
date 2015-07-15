@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.song {
+  margin-bottom: 20px;
+}
+
+.song a {
+  text-decoration: none;
+  color: black;
+}
+
+.landing-container {
+  font-size: 0px;
+}
+
+.list-container, .song-container {
+  width: 50%;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.admin {
+  font-size: 40px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px #AAA;
+}
+
+.admin:hover {
+  color: #EEE;
+  text-shadow: 0px 0px 2px black;
+}
