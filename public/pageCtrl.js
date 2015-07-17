@@ -7,40 +7,48 @@ angular.module("pageCtrl", [])
 
   $scope.songs = [
     { 
-      title: "Alone At Night", 
-      artist: "Psychic Rites", 
-      url: "http://www.digitalwell.washington.edu/dw/1/51/bd/bd808f4e-4f00-4021-8690-9d21b141e613.MP3" 
+      title: "Together", 
+      artist: "Disclosure", 
+      url: "/music/disclosure-together.mp3",
+      pic: "/covers/disclosure.jpg"
     },
     { 
-      title: "Kitty", 
-      artist: "Presidents of the United States of America",
-      url: "http://arhdesignco.com/mp3/Kitty%20~%20The%20presidents%20of%20the%20united%20states%20of%20america.mp3" 
+      title: "Forever Pt. II feat. Kareem Taylor", 
+      artist: "Snakehips",
+      url: "/music/snakehips-forever2.mp3", 
+      pic: "/covers/snakehips.jpg"
     },
     { 
-      title: "Mine", 
-      artist: "GOT7",
-      url: "/music/ghaea.mp3"
+      title: "Gold", 
+      artist: "Bondax",
+      url: "/music/bondax-gold.mp3",
+      pic: "/covers/bondax.jpg"
     },
     { 
-      title: "Derezzed (The Glitch Mob Remix)", 
-      artist: "Daft Punk",
-      url: "/music/claudia.mp3" 
+      title: "Gooey", 
+      artist: "Glass Animals",
+      url: "/music/glassanimals-gooey.mp3",
+      pic: "/covers/glass-animals.jpg"
     },
     { 
-      title: "Like This", 
-      artist: "Jkwon feat. Andy Milonakis",
-      url: "/music/steve.mp3" 
+      title: "Sun Models feat. Madelyn Grant", 
+      artist: "Odesza",
+      url: "/music/odesza-sunmodels.mp3",
+      pic: "/covers/odesza.jpg"
     },
     { 
-      title: "Party (Summer Occasion Remix)", 
-      artist: "Beyonce feat. Andre 3000",
-      url: "/music/tajaa.mp3" 
+      title: "Warm Water (Snakehips Remix)", 
+      artist: "Banks",
+      url: "/music/banks-warmwaterrmx.mp3", 
+      pic:"/covers/banks.jpg"
     },
     { 
-      title: "If You Have To Ask", 
-      artist: "Red Hot Chili Peppers",
-      url: "/music/carlos.mp3" 
+      title: "Something About You", 
+      artist: "Hayden James",
+      url: "/music/haydenjames-something.mp3", 
+      pic: "/covers/haydenjames.jpg"
     }
+    
   ]
 
 })

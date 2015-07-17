@@ -1,32 +1,34 @@
 <div class="landing-container">
-  <div class="list-container" ng-controller="ListController">
-
-    <div class="song" 
-      ng-repeat="song in songs"
-      ng-click="changeSong(song)">
-      <div class="title">
-        {{ song.title }}
+  
+  <div class="song-container" ng-controller="SongController">
+  <h2>now playing</h2>
+    <div class ="now-playing" ng-show="song.title">
+      <button class="play-button" ng-click="playPause()">
+      {{ (isPlaying ? "II" : "►") }}
+      </button>
+      <div class="show-info">
+      "{{song.title}}"   <strong>{{song.artist}}</strong>
       </div>
-      <div class="artist">{{ song.artist }}</div>
       
     </div>
 
+    
+</div>
+  <div class="list-container" ng-controller="ListController">
+
+    <div class="song" 
+      style="background-image:url({{song.pic}}) "
+      ng-repeat="song in songs"
+      ng-click="changeSong(song)">
+      
+      <div class="title">
+        "{{song.title}}"
+      </div>
+      <div class="artist">{{ song.artist }}</div>
+      </div>
+
+
   </div>
 
-  <div class="song-container" ng-controller="SongController">
-
-    <div ng-show="song.title">
-      <div>
-        Title: <span ng-bind="song.title"></span>
-      </div>
-      <div>
-        Artist: <span ng-bind="song.artist"></span>
-      </div>
-    </div>
-
-    <button ng-click="playPause()">
-      {{ (isPlaying ? "Pause" : "Play") }}
-    </button>
-
-  </div>
+  
 </div>

@@ -3,18 +3,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+h2{
+   font-family: 'Lobster';
+   font-size: 80px;
+   color: white;
+   text-shadow: 3px 3px #AAA;
 
-.song {
-  margin-bottom: 20px;
+}
+/*song container */
+.song-container{
+  font-family: 'Avenir';
 }
 
+.play-button{
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  display: inline;
+  width: 5%;
+  
+}
+
+.show-info{
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  vertical-align: top;
+  font-size: 24px;
+}
+.now-playing{
+  margin-top: 10%;
+  width: 100%;
+  font-size: 0px;
+}
+
+/*song playlist*/
+.title{
+  font-size: 26px;
+}
+.artist{
+  font-size: 18px;
+}
+.play {
+  position: relative;
+  left:80%;
+  top: 44%; 
+}
+
+.song {
+  font-family: 'Avenir';
+  line-height: .8;
+  text-shadow: 2px 2px gray;
+  width: 30%;
+  height: 27vh;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1%; 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.song:first-of-type{
+  color:white;
+}
+.song:nth-child(2){
+  width: 60%;
+  color: white;
+}
+.song:nth-child(3){
+  width: 45%;
+  color: white;
+}
+.song:nth-child(4){
+  width: 45%;
+ color: white;
+}
+
+.song:nth-child(5){
+ color: white;
+}
+
+.song:nth-child(6){
+color: white;
+}
+
+.song:last-of-type{
+  color: white;
+}
+
+.song:hover{
+  -webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); filter: blur(2px);
+
+}
 .song a {
   text-decoration: none;
   color: black;
 }
 
+
 .landing-container {
   font-size: 0px;
+  padding: 5%;
 }
 
 .list-container, .song-container {
@@ -23,6 +116,7 @@
   font-size: 20px;
   vertical-align: top;
 }
+
 
 .admin {
   font-size: 40px;

@@ -14,10 +14,13 @@ angular.module("songCtrl", [])
 
     howlSong = new Howl({
       urls: [ song.url ],
+      autoplay: true
     }).play()
+
 
     $scope.isPlaying = true
   })
+
 
   $scope.playPause = function() {
     if ($scope.isPlaying) {

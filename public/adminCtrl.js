@@ -9,7 +9,8 @@ angular.module("adminCtrl", [])
     $scope.songs.push({
       title: $scope.title,
       artist: $scope.artist,
-      url: $scope.url
+      url: $scope.url,
+      pic: $scope.pic
     })
   }
 
